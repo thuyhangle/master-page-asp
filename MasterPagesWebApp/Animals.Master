@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Animals.master.cs" Inherits="MasterPagesWebApp.Animals" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 239px">
+    <form id="form1" runat="server">
+    <header>
+        <asp:Menu ID="Menu1" runat="server">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Main Page" Value="Main Page"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/catsPage.aspx" Text="Cats Page" Value="Cats Page"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/dogsPage.aspx" Text="Dogs Page" Value="Dogs Page"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
